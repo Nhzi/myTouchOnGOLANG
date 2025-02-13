@@ -38,5 +38,7 @@ func authenticator(name string, num int) {
 
 func passwordChange(old *string, new string) {
 	fmt.Println("It is a Start of the password Change")
+	fmt.Println("Get Geeked; Nhzi")
+	fmt.Println("0xAddress is:", old)
 	*old = new
 }
