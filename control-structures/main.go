@@ -13,6 +13,12 @@ func main() {
 	}
 
 	name := "Sheriff"
+
+	authenticator(name, num)
+
+}
+
+func authenticator(name string, num int) {
 	if name == "Sheriff" {
 		num = 3
 	}
