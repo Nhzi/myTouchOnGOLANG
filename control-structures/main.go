@@ -16,7 +16,12 @@ func main() {
 
 	name := "Sheriff"
 
+	var password string
+	password = ""
+
 	authenticator(name, num)
+	passwordChange(&password, "nhzi120438")
+	fmt.Println(password, "is the new Password Set by User:", name)
 }
 
 func authenticator(name string, num int) {
@@ -29,4 +34,9 @@ func authenticator(name string, num int) {
 	} else {
 		fmt.Println("You aint Sheriff you bitch!")
 	}
+}
+
+func passwordChange(old *string, new string) {
+	fmt.Println("It is a Start of the password Change")
+	*old = new
 }
